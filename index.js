@@ -12,14 +12,14 @@ server.listen(server_port, () => {
     console.log(`Starting Stock Exchange server on ${server_port}`);
 
     console.log(`Loading exchange data`);
-    
-    stock.loadData(); 
+
+    stock.loadData();
 
 });
 
 server.get('/', (req, res) => {
 
     let result = stock.handleGetRequest(req, res);
-    console.log(result);
+
     res.send(result);
 });
