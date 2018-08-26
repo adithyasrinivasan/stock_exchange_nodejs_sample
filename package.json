@@ -1,0 +1,14 @@
+{
+  "name": "stock_exchange",
+  "version": "1.0.0",
+  "description": "A project built on top of NodeJS to mimic backend functionality for a Stock Exchange",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adithya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
