@@ -1,3 +1,4 @@
+const logger = require('./winston.js'); 
 class Stock {
 
     constructor(db) {
@@ -25,7 +26,7 @@ class Stock {
                 return data;
             });
 
-            console.log(`Completed Loading exchange data`);
+            logger.info(`Completed Loading exchange data`);
 
         });
     }

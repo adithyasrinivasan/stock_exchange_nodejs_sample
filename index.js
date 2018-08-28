@@ -5,13 +5,14 @@ const express = require("express");
 const server = express();
 const db = require("./db.js");
 
+const logger = require("./winston.js");
 const Stock = require("./stock.js");
 let stock = new Stock(db);
 
 server.listen(server_port, () => {
-    console.log(`Starting Stock Exchange server on ${server_port}`);
+    logger.info(`Starting Stock Exchange server on ${server_port}`);
 
-    console.log(`Loading exchange data`);
+    logger.info(`Loading exchange data`);
 
     stock.loadData();
 
